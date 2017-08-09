@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Elvina Gatina](https://up.htmlacademy.ru/htmlcss/18/user/363247).
-* Наставник: `Неизвестно`.
+* Наставник: [Глеб Цырульников](https://up.htmlacademy.ru/htmlcss/18/user/492663).
 
 ---
 
