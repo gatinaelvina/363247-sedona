@@ -28,19 +28,16 @@
                         <legend>Инфраструктура:</legend>
                         <ul class="infrastructure-filter">
                             <li class="filter-option">
-                                <label>
-                                    Бассейн<input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" checked>
-                                </label>    
+                                <label for="pool">Бассейн</label>
+                                <input class="visually-hidden filter-input" type="checkbox" name="pool" id="pool" checked>   
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    Парковка<input class="visually-hidden filter-input" type="checkbox" name="parking">
-                                </label>
+                                <label for="parking">Парковка</label>
+                                <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking">
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    Wi-fi<input class="visually-hidden filter-input" type="checkbox" name="wi-fi">
-                                </label>    
+                                <label for="wi-fi">Wi-fi</label>
+                                <input class="visually-hidden filter-input" type="checkbox" name="wi-fi" id="wi-fi">  
                             </li>
                         </ul>
                     </fieldset>
@@ -48,37 +45,30 @@
                         <legend>Тип жилья:</legend>
                         <ul class="accomodation-type-filter">
                             <li class="filter-option">
-                                <label>
-                                    Гостиница<input class="visually-hidden filter-input" type="checkbox" name="hostels" checked>
-                                </label>    
+                                <label for="hostels">Гостиница</label>
+                                    Гостиница<input class="visually-hidden filter-input" type="checkbox" name="hostels" id="hostels" checked>   
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    Мотель<input class="visually-hidden filter-input" type="checkbox" name="motels" checked>
-                                </label>
+                                <label for="motels">Мотель</label>
+                                <input class="visually-hidden filter-input" type="checkbox" name="motels" checked id="motels">
                             </li>
                             <li class="filter-option">
-                                <label>
-                                    Апартаменты<input class="visually-hidden filter-input" type="checkbox" name="apartments" checked>
-                                </label>
+                                <label for="apartments">Апартаменты</label>
+                                <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments" checked>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Стоимость в сутки(Р):</legend>
-                        <ul class="price-filter">
-                            <li>От 0</li>
-                            <li>До 3000</li>
-                        </ul>
-                        <input class="visually-hidden filter-slider" type="range" min="0" max="3000" name="price">
+                        <input class="min-price" type="text" value="от 0">
+                        <input class="max-price" type="text" value="до 3000">
                     </fieldset>
-                    <button type="submit" class="filter-button">Показать</button>  
+                    <button type="submit" class="filter-btn">Показать</button>  
                 </form>
             </section>
             <section class="results">
-                <label>
-                    Найдено:<output name="result">3</output>
-                </label> 
+                <label for="result">Найдено:</label>
+                <output name="result" id="result">3</output>
                 <h2 class="visually-hidden">Результаты поиска</h2>
                 <div class="sorting-options">
                     <p>Сортировка:</p>
@@ -88,8 +78,8 @@
                         <li class="sorting-option"><a>По рейтингу</a></li>
                     </ul>
                 </div>
-                <button type="button" class="low-to-high sorting-btn-current"></button>
-                <button type="button" class="high-to-low sorting-btn"></button>
+                <a class="low-to-high sorting-btn-current" href="#">По возрастанию</a>
+                <a class="high-to-low sorting-btn" href="#">По убыванию</a>
                     <article class="search-result">
                         <h3>Amara Resort&#38;Spa</h3>
                         <span class="accomodation-type">Гостиница</span>
@@ -126,9 +116,9 @@
             <span class="hashtag">#visitsedona</span>
             <div class="socials">
                 <ul>
-                    <li><a class="social-button">Twitter</a></li>
-                    <li><a class="social-button">Facebook</a></li>
-                    <li><a class="social-button">YouTube</a></li>
+                    <li><a class="social-btn" href="#">Twitter</a></li>
+                    <li><a class="social-btn" href="#">Facebook</a></li>
+                    <li><a class="social-btn" href="#">YouTube</a></li>
                 </ul>    
             </div>
             <p class="copyright">

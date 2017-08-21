@@ -20,29 +20,29 @@
             </nav>
         </header>
         <main>
-            <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-            <p class="slogan">Седона - небольшой красивый городок в Аризоне, заслуживающий большего!</p>
+            <h1>Седона - небольшой красивый городок в Аризоне, заслуживающий большего!</h1>
             <section class="features">
-                <h2 class="visually-hidden">Преимущества города</h2>
-                <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+                <h2>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</h2>
                 <ul class="features-list">
                     <li class="with-illustration">
                         <h3>Настоящий городок</h3>
                         <span>№1</span>
                         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                    </li>
-                    <li class="recommendations">
-                        <h3>Жилье</h3>
-                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                    </li>
-                    <li class="recommendations">
-                        <h3>Еда</h3>
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </li>
-                    <li class="recommendations">
-                        <h3>Сувениры</h3>
-                        <p>Не только китайского, но и местного производства!</p>
-                    </li>
+                        <ul class="recommendations">
+                            <li class="recommendation">
+                                <h3>Жилье</h3>
+                                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            </li>
+                            <li class="recommendation">
+                                <h3>Еда</h3>
+                                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            </li>
+                            <li class="recommendation">
+                                <h3>Сувениры</h3>
+                                <p>Не только китайского, но и местного производства!</p>
+                            </li>
+                        </ul> 
+                    </li>    
                     <li class="with-illustration">
                         <h3>Там есть мост дьявола</h3>
                         <span>№2</span>
@@ -71,30 +71,36 @@
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <form class="search" action="#" method="get">
                     <h3>Поиск гостиницы в Седоне</h3>
-                    <label>
-                        Дата заезда:<input type="text" name="arrival-date" placeholder="24 апреля 2016">
-                    </label>                                        
-                    <label>
-                        Дата выезда:<input type="text" name="departure-date" placeholder="4 июля 2016">
-                    </label>
-                    <label>
-                        Взрослые:<input type="number" min="0" name="adults-number" placeholder="2">
-                    </label>
-                    <label>
-                        Дети:<input type="number" min="0" name="kids-number">
-                    </label>
-                    <button type="submit" class="search-form-button">Найти</button>
+                    <label for="arrival-date">Дата заезда:</label>
+                    <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2016"> 
+                    <button class="date-choose" type="button">Календарь выбора даты</button>
+                    
+                    <label for="departure-date">Дата выезда:</label>
+                    <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2016">
+                    <button class="date-choose" type="button">Календарь выбора даты</button>
+
+                    <label for="adults-number">Взрослые:</label>
+                    <input class="btn-minus" type="button" value="-">
+                    <input type="number" name="adults-number" id="adults-number" min="0" placeholder="2">
+                    <input class="btn-plus" type="button" value="+">
+                   
+                    <label for="kids-number">Дети:</label>
+                    <input class="btn-minus" type="button" value="-">
+                    <input type="number" min="0" name="kids-number" id="kids-number">
+                    <input class="btn-plus" type="button" value="+">
+                    
+                    <button type="submit" class="search-form-btn">Найти</button>
                 </form>
             </section>
-            <img src="img/map.png" width="1200" height="593" alt="Расположение города">
+            <img src="img/map.png" width="1200" height="593" alt="Город Седона в штате Аризона">
         </main>
         <footer class="main-footer">
             <span class="hashtag">#visitsedona</span>
             <div class="socials">
                 <ul>
-                    <li><a class="social-button" href="#">Twitter</a></li>
-                    <li><a class="social-button" href="#">Facebook</a></li>
-                    <li><a class="social-button" href="#">YouTube</a></li>
+                    <li><a class="social-btn" href="#">Twitter</a></li>
+                    <li><a class="social-btn" href="#">Facebook</a></li>
+                    <li><a class="social-btn" href="#">YouTube</a></li>
                 </ul>    
             </div>
             <p class="copyright">
