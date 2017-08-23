@@ -1,19 +1,125 @@
 body {
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 21px;
     font-family: "PT Sans", "Arial", sans-serif;
     color: #333333;
     text-transform: uppercase;
 }
 
-.features-list h3,
-.search-result h3,
-li.recommendation h3 {
+.visually-hidden {
+    visibility: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
     font-weight: bold;
-    font-size: 21px;
     color: #000000;
 }
 
-.with-illustration h3 {
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #b2b2b2;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.features h2 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.features-list h3,
+.recommendations-list h3 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.features-list,
+.recommendations-list {
+    list-style: none;
+}
+
+.features-item {
+    color: #000000;
+    
+    background-color: #eeeeee;
+}
+
+.with-illustration {
     color: #ffffff;
+    
+    background-color: #81b3d1;
+}
+
+.recommendations-item {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.question {
+    font-size: ;
+    font-weight: bold;
+}
+
+form.search h3 {
+    font-size: 21px;
+    line-height:: 26px;
+    color: #ffffff;
+    
+    background-color: #756357;
+}
+
+form.search label {
+    font-weight: bold;
+}
+
+form.search input {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background-color: #f1f1f1;
+}
+
+.search-form-btn {
+    font-size: 21px;
+    line-height:: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    
+    background-color: #81b3d1;
+}
+
+.main-footer {
+    background-color: ;
+}
+
+.hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.socials-list {
+    list-style: none;
 }
