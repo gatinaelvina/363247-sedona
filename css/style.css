@@ -1,13 +1,25 @@
 body {
-    font-size: 14px;
-    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    
     font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
     color: #333333;
     text-transform: uppercase;
 }
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 a {
@@ -32,22 +44,31 @@ a {
     color: #b2b2b2;
 }
 
-h1 {
+.site-navigation a.current {
+    color: #766357;
+}
+
+h1.intro {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    text-align: center;
+}
+
+.features {
+    text-align: center;
 }
 
 .features h2 {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 26px;
     font-weight: normal;
 }
 
 .features-list h3,
 .recommendations-list h3 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
 }
 
 .features-list,
@@ -57,14 +78,15 @@ h1 {
 
 .features-item {
     color: #000000;
-    
+
     background-color: #eeeeee;
 }
+
 
 .with-illustration {
     color: #ffffff;
     
-    background-color: #81b3d1;
+    background-color: #81b3d2;
 }
 
 .recommendations-item {
@@ -73,44 +95,284 @@ h1 {
     background-color: #ffffff;
 }
 
-.question {
-    font-size: ;
+.search {
+    text-align: center;
+}
+
+.search b {
+    font-size: 30px;
+    line-height: 36px;
     font-weight: bold;
 }
 
-form.search h3 {
-    font-size: 21px;
-    line-height:: 26px;
-    color: #ffffff;
-    
-    background-color: #756357;
-}
-
-form.search label {
-    font-weight: bold;
-}
-
-form.search input {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: bold;
+.btn {
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
     
-    background-color: #f1f1f1;
+    border: none;
 }
 
-.search-form-btn {
+.search-btn {
     font-size: 21px;
     line-height:: 26px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
     
-    background-color: #81b3d1;
+    background-color: #766357;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+    background-color: #604e43;
+}
+
+.search-btn:active {
+    color: rgba(225, 225, 225, 0.3);
+    
+    background-color: #503e33;
+}
+
+.search-form {
+    width: 570px;
+    height: 395px;
+    text-align: center;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.search-item label {
+    font-weight: bold;
+}
+
+.search-item input {
+    font: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.search-item input[type="text"]:hover,
+.search-item input[type="number"]:hover {
+    background-color: #ebebeb;
+}
+
+.search input[type="text"]:focus,
+.search input[type="number"]:focus {
+    background-color: #ffffff;
+}
+
+.btn-minus,
+.btn-plus {
+    color: #aaaaaa;
+}
+
+.btn-minus:hover,
+.btn-plus:hover {
+    color: #000000;
+}
+
+.btn-minus:active,
+.btn-plus:active {
+    color: #82b4d3;
+}
+
+.submit-btn {
+    font-size: 21px;
+    line-height:: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    background-color: #82b4d3;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #669fc1;
+}
+
+.submit-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5497be;
+}
+
+.filters {
+    min-height: 562px;
+    
+    background-color: #477ea8;
+    background-image: url("../img/filter%20background.jpg");
+    background-repeat: no-repeat;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter input {
+    font: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.filter label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.min-price,
+.max-price {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    
+    text-align: center;
+}
+
+.filter-btn {
+    color: #ffffff;
+    text-align: center;
+    
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #000000;
+    
+    background-color: #ffffff;
+}
+
+.results label,
+.results output {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.sorting {
+    font-size: 12px;
+}
+
+.sorting-options {
+    list-style: none;
+}
+
+.sorting-options a {
+    color: rgba(0, 0, 0, 0.3);
+    
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-options a:hover,
+.sorting-options a:focus {
+    color: #81b3d2;
+    
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-options a:active {
+    color: #000000;
+    
+    border-bottom: none;
+}
+
+.sorting-options a.current {
+    color: #81b3d2;
+    
+    border-bottom: none;
+}
+
+.search-result {
+    border-top: 1px solid #e5e5e5;
+}
+
+.search-result:nth-child(3) {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.result-caption {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.result-caption:hover,
+.result-caption:focus {
+    color: #81b3d2;
+}
+
+.result-caption:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.accommodation-type,
+.starting-price {
+    color: #333333; 
+}
+
+.show-more-btn {
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    
+    background-color: #81b3d2;
+}
+
+.show-more-btn:hover,
+.show-more-btn:focus {
+    background-color: #669fc1;
+}
+
+.show-more-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5497be;
+}
+
+.booking-btn {
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    
+    background-color: #766357;
+}
+
+.booking-btn:hover,
+.booking-btn:focus {
+    background-color: #604e43;
+}
+
+.booking-btn:active {
+    color: rgba(225, 225, 225, 0.3);
+    
+    background-color: #503e33;
+}
+
+.rating {
+    display: inline-block;
+    
+    color: #666666;
+    text-align: center;
+    
+    background-color: #f2f2f2;
 }
 
 .main-footer {
-    background-color: ;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag {
@@ -118,8 +380,18 @@ form.search input {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    text-align: center;
+}
+
+.socials {
+    text-align: center;
 }
 
 .socials-list {
     list-style: none;
 }
+
+.footer-copyright {
+    text-align: center;
+}
+
