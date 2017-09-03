@@ -31,35 +31,31 @@
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
                 <form class="filter" action="#" method="get">
-                    <div class="container-1">
-                        <fieldset>
-                            <legend>Инфраструктура:</legend>
+                        <div class="filter-column">
+                            <p class="filter-title">Инфраструктура:</p>
                             <ul class="infrastructure-filter">
                                 <li class="filter-option">
                                     <label>
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" checked>
-                                        
                                         Бассейн
                                     </label>
                                 </li>
                                 <li class="filter-option">
                                     <label>
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="parking">
-                                        
                                         Парковка
                                     </label>
                                 </li>
                                 <li class="filter-option">
                                     <label>
                                         <input class="vsually-hidden filter-checkbox" type="checkbox" name="wi-fi">
-                                        
                                     Wi-fi
                                     </label>
                                 </li>
                             </ul>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Тип жилья:</legend>
+                        </div>
+                        <div class="filter-column">
+                            <p class="filter-title">Тип жилья:</p>
                             <ul class="accomodation-type-filter">
                                 <li class="filter-option">
                                     <label for="hostels">Гостиница</label>
@@ -74,11 +70,9 @@
                                     <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments" checked>
                                 </li>
                             </ul>
-                        </fieldset>
-                    </div>
-                    <div class="container-2">
-                        <fieldset class="filter-range">
-                            <legend>Стоимость в сутки (Р):</legend>
+                        </div>
+                        <div class="filter-range">
+                            <p class="filter-title">Стоимость в сутки (Р):</p>
                                   <div class="price-controls">
                                         <label class="min-price">от<input type="text" name="min-price" value="0"></label>
                                         <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
@@ -90,9 +84,8 @@
                                         <div class="range-toggle range-toggle-min"></div>
                                         <div class="range-toggle range-toggle-max"></div>
                                  </div>
-                        </fieldset>
+                        </div>
                         <button type="submit" class="btn filter-btn">Показать</button>
-                    </div>
                 </form>
             </section>
             <section class="results">
@@ -123,11 +116,13 @@
                             </div>
                                 <a class="btn show-more-btn" href="#">Подробнее</a>
                                 <a class="btn booking-btn" href="#">Забронировать</a>                  
+                            <div class="block-right">  
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                                 <span class="icon-star"></span>
                                 <p class="rating">Рейтинг: 8,5</p>
+                            </div>     
                     </article>
                     <article class="search-result">
                         <img src="img/hotel2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
