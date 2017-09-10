@@ -64,13 +64,13 @@ a {
     top: 0;
     left: 0;
     z-index: 1;
-    
     display: -webkit-box;
     display: -ms-flexbox;  
     display: flex;
     width: 1200px;
     height: 56px;
     padding: 0;
+    margin-bottom: -56px;
     
     background-color: #ffffff;
 }
@@ -512,7 +512,7 @@ a {
 
 .date-choose-btn {
     position: absolute;
-    top: 8px;
+    top: 7px;
     right: 4px;
     
     font-size: 0;
@@ -610,6 +610,10 @@ a {
     background-color: #5497be;
 }
 
+.map-wrapper iframe {
+    border: 0;
+}
+
 /*----Фильтр гостиниц----*/
 
 .filters {
@@ -694,13 +698,13 @@ a {
 }
 
 .filter-option input[type="checkbox"]:focus + label::before {
-    background-image: url("../img/checkbox-off.svg");
-    background-repeat: no-repeat;
+    outline: thin dotted #ffffff;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-option input[type="checkbox"]:checked:focus + label::before {
-    background-image: url("../img/checkbox-on.svg");
-    background-repeat: no-repeat;
+.filter-option input[type="checkbox"]:checked:focus + label::before { 
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-option input[type="checkbox"]:checked + label::before {
@@ -767,20 +771,20 @@ a {
 }
 
 .price-controls .min-price {
-    padding-left: 60px;
+    padding-left: 65px;
 }
 
 .price-controls .max-price {
-    padding-left: 100px;
+    padding-left: 88px;
 }
 
 .price-controls input {
     width: 40px;
     margin: 0;
+    margin-left: 3px;
 
     color: inherit;
     font: inherit;
-    text-align: center;
 
     background: none;
     border: none;
@@ -823,6 +827,7 @@ a {
 .range-toggle:hover {
     width: 22px;
     height: 22px;
+    margin-top: -1px;
     
     border: 9px solid #ffffff;
 }
@@ -1170,7 +1175,7 @@ a {
         -ms-flex-align: center;
             align-items: center;  
     width: 100%;
-    min-height: 128px;
+    height: 128px;
     padding-left: 132px;
     padding-right: 101px;
     
@@ -1216,6 +1221,7 @@ a {
     margin-right: 6px;
     
     text-align: center;
+    vertical-align: middle;
     
     background-color: #81b3d2;
     fill: #ffffff;
@@ -1238,6 +1244,8 @@ a {
     height: 48px;
     padding: 13px 17px;
     margin-right: 6px;
+    
+    vertical-align: middle;
     
     background-color: #81b3d2;
     fill: #ffffff;
